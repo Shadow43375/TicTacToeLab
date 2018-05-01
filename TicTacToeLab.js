@@ -581,12 +581,12 @@ document.getElementById("overlay").classList.add('hidden');
 resetGame(); 
 });
 
-// let addNewPlayerButton = document.getElementById('addNewPlayerButton');
-// addNewPlayerButton.addEventListener('click', function() {
-//   let newPlayerName =   document.getElementById('newPlayerNameField').value
-//   let newPlayerColor = document.getElementById('newPlayerColorField').value;
-//   if(!gameState.playerExists(newPlayerName) && !gameState.colorTaken(newPlayerColor)) {
-//     let newPlayer = new Player(newPlayerName, newPlayerColor);
-//     gameState.addPlayer(newPlayer);    
-//   }
-// });
+let addNewPlayerButton = document.getElementById('addNewPlayerButton');
+addNewPlayerButton.addEventListener('click', function() {
+  let newPlayerName =   document.getElementById('newPlayerNameField').value
+  let newPlayerColor = document.getElementById('newPlayerColorField').value;
+  if(!gameState.playerExists(newPlayerName) && !gameState.colorTaken(newPlayerColor)) {
+    let newPlayer = new Player(newPlayerName, newPlayerColor);
+    gameState.addPlayer(newPlayer);    
+  }
+});
