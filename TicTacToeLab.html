@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="TicTacToeLab.css"> 
+  </head>
+  <body>
+    <div class="hidden" id="overlay">
+      <i class="fa fa-remove" id="overlayExitIcon"></i>
+    <form id="gameSettingsForm">
+      <div class="inputArea">
+        <div> Width of Game Board </div>
+        <input type="number" min="1" max="10" id="gridDimensionsFieldX" value="3">        
+      </div>
+      <div class="inputArea">
+        <div> Height of Game Board </div>
+        <input type="number" min="1" max="10" id="gridDimensionsFieldY" value="3">       
+      </div>
+      <div class="inputArea">
+        <div> Cells in a row to win </div>
+        <input type="number" min="1" max="10" id="RowsToWinField" value="3">       
+      </div>
+      <div class="inputArea">
+        <div> Cells in a coulmn to win </div>
+        <input type="number" min="1" max="10" id="ColumnsToWinField" value="3">       
+      </div>
+      <div class="inputArea">
+        <div> Cells in a diagonal to win </div>
+        <input type="number" min="1" max="10" id="DiagonalToWinField" value="3">       
+      </div>
+      <button type="button" id="generateGameButton"> Generate Game </button>
+      
+    </form> 
+    </div>
+    
+    
+    <div id="gameContainer">
+      <div id="currentPlayerDisplay">playerName</div>
+      <div id="ticTacInterface"></div>
+      <div id="buttonArea">
+        <button type="button" id="resetButton">Reset</button>  
+        <button type="button" id="gameSettingsButton">
+          Game Settings
+        </button>        
+      </div>
+    </div>
+    
+<!--     <form>
+      <input placeholder = "Player Name" id="newPlayerNameField">
+      <input placeholder = "Player Color" id="newPlayerColorField">
+      <button type="button" id="addNewPlayerButton">
+        +++
+      </button>
+    </form>   -->  
+
+    <script src="TicTacToeLab.js"></script>
+   
+  </body>
+</html>

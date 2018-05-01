@@ -1,0 +1,103 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#overlay {
+  background-color: rgba(100, 100, 255, 0.96);
+  position: absolute;
+  top: 0px;
+  height: 120%;
+  width: 100%;
+}
+
+#overlayExitIcon {
+  font-size: 3em;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  left: 90%;
+}
+
+#gameSettingsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputArea  {
+  width: 35%;
+  margin-bottom: 10vh;
+  text-align: center;
+  color: white;
+}
+
+.inputArea > input {
+  padding: 10px;
+  width: 100%;
+}
+
+/* #gameSettingsForm > input {
+  width: 35%;
+  margin-bottom: 10vh;
+  padding: 10px;
+} */
+
+#gameContainer {
+  width: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+#currentPlayerDisplay {
+  text-align: right;
+  font-size: 1.2em;
+}
+
+#ticTacInterface {
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+
+}
+
+#buttonArea {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#resetButton {
+  background-color: rgb(66, 244, 110);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.75);
+  cursor: pointer;
+  height: 40px;
+  width: 45%;
+/*   display: block; */
+}
+
+#gameSettingsButton {
+  background-color: rgb(60, 89, 193);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.75);
+  cursor: pointer;
+  height: 40px;
+  width: 45%;
+/*   display: block;   */
+}
+
