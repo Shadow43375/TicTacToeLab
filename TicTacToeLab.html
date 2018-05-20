@@ -1,10 +1,11 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="TicTacToeLab.css"> 
+    <script src="jscolor.js"></script>
   </head>
   <body>
     <div class="hidden" id="overlay">
-      <i class="fa fa-remove" id="overlayExitIcon"></i>
+      <i id="overlayExitIcon">X</i>
     <form id="gameSettingsForm">
       <div class="inputArea">
         <div> Width of Game Board </div>
@@ -45,7 +46,7 @@
     
     <form>
       <input placeholder = "Player Name" id="newPlayerNameField">
-      <input placeholder = "Player Color" id="newPlayerColorField">
+      <input placeholder = "Player Color" class="jscolor" id="newPlayerColorField">
       <button type="button" id="addNewPlayerButton">
         +++
       </button>
